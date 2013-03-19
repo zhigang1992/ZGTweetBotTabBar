@@ -10,5 +10,5 @@
 #import "ZGTweetBotTabBarViewController.h"
 
 @interface ViewController : UIViewController <ZGTweetBotViewControllerDataSource>
-
+@property (nonatomic) NSInteger index;
 @end

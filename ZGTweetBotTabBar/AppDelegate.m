@@ -7,12 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "ZGTweetBotTabBarViewController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ZGTweetBotTabBarViewController *tweetBotTabBarController = (ZGTweetBotTabBarViewController *)self.window.rootViewController;
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    
+    
+    ViewController *v1 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    v1.index = 1;
+    ViewController *v2 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    v2.index = 2;
+    ViewController *v3 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    v3.index = 3;
+    ViewController *v4 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    v4.index = 4;
+    ViewController *v5 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    v5.index = 5;
+    
+    [tweetBotTabBarController setSubViewControllers:@[v1, v2, v3, v4, v5]];
+    
     return YES;
 }
 							

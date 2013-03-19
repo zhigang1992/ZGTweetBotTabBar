@@ -28,14 +28,9 @@
 
 @interface ZGTweetBotTabBarViewController : UIViewController
 
-+ (ZGTweetBotTabBarViewController *)sharedTweetBotTabBarController;
 
-- (void)setSubViewControllers:(NSArray *)subViewController;
-- (void)setNotificationStatus:(BOOL)hasNewNotification ForSubViewControllerAtIndex:(NSInteger )index;
-- (void)setNotificationStatus:(BOOL)hasNewNotification ForSubViewController:(UIViewController *)viewController;
+@property (nonatomic) NSInteger selectedViewControllerIndex;
 
-- (void)setSelecetedSubViewController:(UIViewController *)viewController;
-- (void)setSelecetedSubViewControllerAtIndex:(NSInteger )index;
-
+@property (nonatomic) NSArray *subViewControllers;
 
 @end
