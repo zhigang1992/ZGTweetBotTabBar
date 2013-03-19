@@ -11,4 +11,5 @@
 
 @interface ViewController : UIViewController <ZGTweetBotViewControllerDataSource>
 @property (nonatomic) NSInteger index;
+- (IBAction)toggleNotification:(id)sender;
 @end

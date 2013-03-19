@@ -50,6 +50,7 @@
         
         self.itemSelected = NO;
         self.hasNotification = NO;
+        self.showNotificationField = YES;
     }
     return self;
 }
@@ -74,6 +75,19 @@
 
 - (BOOL)hasNotification{
     return self.notificationView.highlighted;
+}
+
+- (BOOL)showNotificationField{
+    return !self.notificationView.hidden;
+}
+
+- (void)setShowNotificationField:(BOOL)showNotificationField{
+    if (showNotificationField == NO) {
+        self.button.frame = CGRectMake(1, 1, self.frame.size.width-2, self.frame.size.height-2);
+    } else {
+        self.button.frame = CGRectMake(1, 1, self.frame.size.width-2, self.frame.size.height-2-4);
+    }
+    self.notificationView.hidden = !showNotificationField;
 }
 
 - (void)touchDownForButton:(UIButton *)button{

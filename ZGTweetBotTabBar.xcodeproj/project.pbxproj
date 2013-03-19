@@ -148,20 +148,44 @@
 				040E4F7116F82716002E9072 /* AppDelegate.h */,
 				040E4F7216F82716002E9072 /* AppDelegate.m */,
 				040E4F7A16F82716002E9072 /* MainStoryboard.storyboard */,
+				040E4FC716F87DAE002E9072 /* ZGTweetBotTabBar */,
+				040E4F7D16F82716002E9072 /* ViewController.h */,
+				040E4F7E16F82716002E9072 /* ViewController.m */,
+				040E4FC816F87DC3002E9072 /* TabBarIcon */,
+				040E4F6916F82716002E9072 /* Supporting Files */,
+			);
+			path = ZGTweetBotTabBar;
+			sourceTree = "<group>";
+		};
+		040E4F6916F82716002E9072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040E4F6A16F82716002E9072 /* ZGTweetBotTabBar-Info.plist */,
+				040E4F6B16F82716002E9072 /* InfoPlist.strings */,
+				040E4F6E16F82716002E9072 /* main.m */,
+				040E4F7016F82716002E9072 /* ZGTweetBotTabBar-Prefix.pch */,
+				040E4F7416F82716002E9072 /* Default.png */,
+				040E4F7616F82716002E9072 /* Default@2x.png */,
+				040E4F7816F82716002E9072 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		040E4FC716F87DAE002E9072 /* ZGTweetBotTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				040E4FC916F87DD4002E9072 /* Image */,
 				040E4F8516F82787002E9072 /* ZGTweetBotTabBarViewController.h */,
 				040E4F8616F82787002E9072 /* ZGTweetBotTabBarViewController.m */,
 				040E4F9416F85D43002E9072 /* ZGTweetBotTabBarItem.h */,
 				040E4F9516F85D43002E9072 /* ZGTweetBotTabBarItem.m */,
-				040E4F7D16F82716002E9072 /* ViewController.h */,
-				040E4F7E16F82716002E9072 /* ViewController.m */,
-				040E4FBF16F870AD002E9072 /* tabBarNotificationLightOff.png */,
-				040E4FC016F870AD002E9072 /* tabBarNotificationLightOff@2x.png */,
-				040E4FC116F870AD002E9072 /* tabBarNotificationLightOn.png */,
-				040E4FC216F870AE002E9072 /* tabBarNotificationLightOn@2x.png */,
-				040E4F8C16F85BFE002E9072 /* tabBarButtonBackground.png */,
-				040E4F8D16F85BFE002E9072 /* tabBarButtonBackground@2x.png */,
-				040E4F8E16F85BFE002E9072 /* tabBarButtonBackgroundHighlighted.png */,
-				040E4F8F16F85BFE002E9072 /* tabBarButtonBackgroundHighlighted@2x.png */,
+			);
+			name = ZGTweetBotTabBar;
+			sourceTree = "<group>";
+		};
+		040E4FC816F87DC3002E9072 /* TabBarIcon */ = {
+			isa = PBXGroup;
+			children = (
 				040E4F9716F86906002E9072 /* favoritesIcon.png */,
 				040E4F9816F86906002E9072 /* favoritesIcon@2x.png */,
 				040E4F9916F86907002E9072 /* favoritesIconHighlighted.png */,
@@ -182,23 +206,23 @@
 				040E4FA816F8690B002E9072 /* timelineIcon@2x.png */,
 				040E4FA916F8690B002E9072 /* timelineIconHighlighted.png */,
 				040E4FAA16F8690B002E9072 /* timelineIconHighlighted@2x.png */,
-				040E4F6916F82716002E9072 /* Supporting Files */,
 			);
-			path = ZGTweetBotTabBar;
+			name = TabBarIcon;
 			sourceTree = "<group>";
 		};
-		040E4F6916F82716002E9072 /* Supporting Files */ = {
+		040E4FC916F87DD4002E9072 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				040E4F6A16F82716002E9072 /* ZGTweetBotTabBar-Info.plist */,
-				040E4F6B16F82716002E9072 /* InfoPlist.strings */,
-				040E4F6E16F82716002E9072 /* main.m */,
-				040E4F7016F82716002E9072 /* ZGTweetBotTabBar-Prefix.pch */,
-				040E4F7416F82716002E9072 /* Default.png */,
-				040E4F7616F82716002E9072 /* Default@2x.png */,
-				040E4F7816F82716002E9072 /* Default-568h@2x.png */,
+				040E4FBF16F870AD002E9072 /* tabBarNotificationLightOff.png */,
+				040E4FC016F870AD002E9072 /* tabBarNotificationLightOff@2x.png */,
+				040E4FC116F870AD002E9072 /* tabBarNotificationLightOn.png */,
+				040E4FC216F870AE002E9072 /* tabBarNotificationLightOn@2x.png */,
+				040E4F8C16F85BFE002E9072 /* tabBarButtonBackground.png */,
+				040E4F8D16F85BFE002E9072 /* tabBarButtonBackground@2x.png */,
+				040E4F8E16F85BFE002E9072 /* tabBarButtonBackgroundHighlighted.png */,
+				040E4F8F16F85BFE002E9072 /* tabBarButtonBackgroundHighlighted@2x.png */,
 			);
-			name = "Supporting Files";
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

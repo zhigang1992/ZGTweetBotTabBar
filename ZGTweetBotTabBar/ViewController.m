@@ -16,17 +16,12 @@
 
 - (IBAction)toggleNotification:(id)sender {
     self.hasNotification = !self.hasNotification;
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_STATUS_CHANGED object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_STATUS_CHANGED object:nil userInfo:nil];
 }
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
     self.hasNotification = NO;
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    label.text = [NSString stringWithFormat:@"%d", self.index];
-    [self.view addSubview:label];
 }
 
 - (NSString *)imageNameForIndex:(NSInteger )index{
@@ -51,6 +46,14 @@
             break;
     }
     return imageName;
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector{
+    if (aSelector == @selector(hasNewNotifications:)) {
+        return self.index != 5;
+    } else {
+        return [super respondsToSelector:aSelector];
+    }
 }
 
 - (UIImage *)tabBarImage:(ZGTweetBotTabBarViewController *)tweetBotTabBarController{

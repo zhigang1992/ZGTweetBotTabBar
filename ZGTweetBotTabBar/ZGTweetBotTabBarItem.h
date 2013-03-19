@@ -19,6 +19,7 @@
 
 @property (nonatomic) BOOL itemSelected;
 @property (nonatomic) BOOL hasNotification;
+@property (nonatomic) BOOL showNotificationField;
 
 - (void)setBarButtomImage:(UIImage *)tabBarImage highlightedImage:(UIImage *)highlightedImage;
 

@@ -22,13 +22,13 @@
     
     ViewController *v1 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
     v1.index = 1;
-    ViewController *v2 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    ViewController *v2 = [storyBoard instantiateViewControllerWithIdentifier:@"2"];
     v2.index = 2;
-    ViewController *v3 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    ViewController *v3 = [storyBoard instantiateViewControllerWithIdentifier:@"3"];
     v3.index = 3;
-    ViewController *v4 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    ViewController *v4 = [storyBoard instantiateViewControllerWithIdentifier:@"4"];
     v4.index = 4;
-    ViewController *v5 = [storyBoard instantiateViewControllerWithIdentifier:@"1"];
+    ViewController *v5 = [storyBoard instantiateViewControllerWithIdentifier:@"5"];
     v5.index = 5;
     
     [tweetBotTabBarController setSubViewControllers:@[v1, v2, v3, v4, v5]];

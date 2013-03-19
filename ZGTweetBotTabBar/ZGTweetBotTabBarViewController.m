@@ -31,14 +31,14 @@
 
 - (void)notificationStatusChanged:(NSNotification *)notification{
     //Update Notification status
-    
+    NSLog(@"%@", notification);
     for (int i=0; i<self.subViewControllers.count; i++) {
         UIViewController <ZGTweetBotViewControllerDataSource> *viewController = [self.subViewControllers objectAtIndex:i];
         ZGTweetBotTabBarItem *barButomItem = (ZGTweetBotTabBarItem *)[self.tweetBotTabBar viewWithTag:i+100];
         if ([viewController respondsToSelector:@selector(hasNewNotifications:)]) {
             barButomItem.hasNotification = [viewController hasNewNotifications:self];
         } else {
-            barButomItem.hasNotification = NO;
+            barButomItem.showNotificationField = NO;
         }
     }
 }
@@ -81,7 +81,7 @@
         if ([viewController respondsToSelector:@selector(hasNewNotifications:)]) {
             barButomItem.hasNotification = [viewController hasNewNotifications:self];
         } else {
-            barButomItem.hasNotification = NO;
+            barButomItem.showNotificationField = NO;
         }
         if (i == self.selectedViewControllerIndex) {
             barButomItem.itemSelected = YES;
@@ -165,10 +165,6 @@
     }
     
     [self.view bringSubviewToFront:self.tweetBotTabBar];
-}
-
-- (void)viewDidLoad{
-    [super viewDidLoad];
 }
 
 @end
