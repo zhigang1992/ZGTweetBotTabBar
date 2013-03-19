@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZGTweetBotTabBarViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ZGTweetBotViewControllerDataSource>
 
 @end

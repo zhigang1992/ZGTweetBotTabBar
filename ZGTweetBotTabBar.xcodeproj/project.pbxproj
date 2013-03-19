@@ -18,6 +18,7 @@
 		040E4F7916F82716002E9072 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040E4F7816F82716002E9072 /* Default-568h@2x.png */; };
 		040E4F7C16F82716002E9072 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040E4F7A16F82716002E9072 /* MainStoryboard.storyboard */; };
 		040E4F7F16F82716002E9072 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E4F7E16F82716002E9072 /* ViewController.m */; };
+		040E4F8716F82787002E9072 /* ZGTweetBotTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040E4F8616F82787002E9072 /* ZGTweetBotTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		040E4F7B16F82716002E9072 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		040E4F7D16F82716002E9072 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		040E4F7E16F82716002E9072 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040E4F8516F82787002E9072 /* ZGTweetBotTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTweetBotTabBarViewController.h; sourceTree = "<group>"; };
+		040E4F8616F82787002E9072 /* ZGTweetBotTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTweetBotTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				040E4F7116F82716002E9072 /* AppDelegate.h */,
 				040E4F7216F82716002E9072 /* AppDelegate.m */,
 				040E4F7A16F82716002E9072 /* MainStoryboard.storyboard */,
+				040E4F8516F82787002E9072 /* ZGTweetBotTabBarViewController.h */,
+				040E4F8616F82787002E9072 /* ZGTweetBotTabBarViewController.m */,
 				040E4F7D16F82716002E9072 /* ViewController.h */,
 				040E4F7E16F82716002E9072 /* ViewController.m */,
 				040E4F6916F82716002E9072 /* Supporting Files */,
@@ -176,6 +181,7 @@
 				040E4F6F16F82716002E9072 /* main.m in Sources */,
 				040E4F7316F82716002E9072 /* AppDelegate.m in Sources */,
 				040E4F7F16F82716002E9072 /* ViewController.m in Sources */,
+				040E4F8716F82787002E9072 /* ZGTweetBotTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				040E4F8416F82716002E9072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
