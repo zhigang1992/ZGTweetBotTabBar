@@ -15,7 +15,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    ZGTweetBotTabBarViewController *tweetBotTabBarController = (ZGTweetBotTabBarViewController *)self.window.rootViewController;
+    UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
+    ZGTweetBotTabBarViewController *tweetBotTabBarController = (ZGTweetBotTabBarViewController *)navVC.topViewController;
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     

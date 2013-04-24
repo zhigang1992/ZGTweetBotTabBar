@@ -46,7 +46,8 @@
 
 - (UIView *)tweetBotTabBar{
     if (!_tweetBotTabBar) {
-        _tweetBotTabBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - kDefaultTabBarHeight, self.view.frame.size.width, kDefaultTabBarHeight)];
+        _tweetBotTabBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - kDefaultTabBarHeight, self.view.frame.size.width, kDefaultTabBarHeight)];
+        _tweetBotTabBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         _tweetBotTabBar.backgroundColor = [UIColor blackColor];
         [self.view addSubview:_tweetBotTabBar];
         [self.view bringSubviewToFront:_tweetBotTabBar];
@@ -102,12 +103,16 @@
 
 - (void)touchDownForButton:(ZGTweetBotTabBarItem *)button{
     [self cycleFromViewControllerToIndex:button.tag-100 withCompletionBlock:nil];
+    ZGTweetBotTabBarItem *item = (ZGTweetBotTabBarItem *)[self.tweetBotTabBar viewWithTag:self.selectedViewControllerIndex+100];
+    item.itemSelected = NO;
+    button.itemSelected = YES;
+    self.selectedViewControllerIndex = button.tag-100;
 }
 
 - (void)touchUpForButton:(ZGTweetBotTabBarItem *)button{
     ZGTweetBotTabBarItem *item = (ZGTweetBotTabBarItem *)[self.tweetBotTabBar viewWithTag:self.selectedViewControllerIndex+100];
     item.itemSelected = NO;
-    button.itemSelected = YES;
+    button.itemSelected = YES;  
     self.selectedViewControllerIndex = button.tag-100;
 }
 
